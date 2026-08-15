@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bitcoin-Backed Loan Tracker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="top-bar">
+    <header class="site-header">
+      <div class="site-title-row">
+        <h1>Bitcoin-Backed Loan Tracker</h1>
+        <p class="tagline">A personal ledger for a loan between friends</p>
+      </div>
+      <nav id="main-nav" class="main-nav" hidden>
+        <button data-view="view-dashboard" class="nav-btn">Dashboard</button>
+        <button data-view="view-payments" class="nav-btn">Payments</button>
+        <button data-view="view-collateral" class="nav-btn">Collateral</button>
+        <button data-view="view-simulator" class="nav-btn">Simulator</button>
+        <button data-view="view-schedule" class="nav-btn">Schedule</button>
+        <button data-view="view-data" class="nav-btn">Data</button>
+      </nav>
+    </header>
+  </div>
+
+  <main id="app">
+    <!-- Views are rendered here by js/app.js -->
+    <section id="view-setup" class="view"></section>
+    <section id="view-dashboard" class="view"></section>
+    <section id="view-payments" class="view"></section>
+    <section id="view-collateral" class="view"></section>
+    <section id="view-simulator" class="view"></section>
+    <section id="view-schedule" class="view"></section>
+    <section id="view-data" class="view"></section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Data lives in your browser (localStorage). Export JSON regularly for backup.</p>
+  </footer>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
